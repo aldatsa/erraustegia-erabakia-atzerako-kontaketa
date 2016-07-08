@@ -1,4 +1,4 @@
-==Erraustegia erabakia - Atzera kontaketa==
+# Erraustegia erabakia - Atzera kontaketa
 
 Zure webgunean Usurbilen irailaren 30etik urriaren 2ra erraustegiari buruz egingo den herri galdeketarako zenbat egun falta diren bistaratzeko erabili txertatzeko kode hau:
 
