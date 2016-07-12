@@ -2,26 +2,26 @@ html, body {
     margin: 0;
 }
 #edukinontzia {
-    width: 260px;
-    height: 260px;
+    width: 500px;
+    height: 500px;
     background: url(../img/atzerako-kontaketa-atzeko-planoa.png);
     color: white;
     position: relative;
 }
 #edukinontzia .egun-kopurua {
     position: absolute;
-    bottom: 50px;
+    bottom: 96px;
     text-align: center;
     width: 100%;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 120px;
 }
 #edukinontzia .egunak-etiketa {
     position: absolute;
-    bottom: 10px;
+    bottom: 16px;
     text-align: center;
-    width: 190px;
+    width: 410px;
     font-weight: bold;
-    font-size: 18px;
-    left: 34px;
+    font-size: 36px;
+    left: 40px;
 }
