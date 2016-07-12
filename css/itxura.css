@@ -1,14 +1,14 @@
 html, body {
     margin: 0;
 }
-.edukinontzia {
+#edukinontzia {
     width: 260px;
     height: 260px;
     background: url(../img/atzerako-kontaketa-atzeko-planoa.png);
     color: white;
     position: relative;
 }
-.edukinontzia .egun-kopurua {
+#edukinontzia .egun-kopurua {
     position: absolute;
     bottom: 50px;
     text-align: center;
@@ -16,7 +16,7 @@ html, body {
     font-weight: bold;
     font-size: 60px;
 }
-.edukinontzia .egunak-etiketa {
+#edukinontzia .egunak-etiketa {
     position: absolute;
     bottom: 10px;
     text-align: center;

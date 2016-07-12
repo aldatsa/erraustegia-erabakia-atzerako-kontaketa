@@ -19,9 +19,32 @@
         elementua.innerText = textua.textContent;
     }
 
+    function eskalatu(id, jatorrizko_zabalera) {
+
+        var zabalera = window.innerWidth;
+        var altuera = window.innerHeight;
+
+        var eskala = 1;
+
+        // Pantailaren zabalera maparena baino txikiagoa bada.
+        if (zabalera < jatorrizko_zabalera) {
+
+            // Eskala kalkulatu.
+            eskala = zabalera / jatorrizko_zabalera;
+
+        }
+
+        document.getElementById(id).style["transform-origin"] = "top left";
+        document.getElementById(id).style.transform = "scale(" + eskala + ")";
+
+        return eskala;
+
+    }
+
     document.addEventListener('DOMContentLoaded', function(){
 
         bistaratuEgunKopurua();
+        eskalatu("edukinontzia", 260);
 
     }, false);
 }());
