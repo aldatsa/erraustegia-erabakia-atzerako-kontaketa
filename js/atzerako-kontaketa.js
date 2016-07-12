@@ -44,7 +44,7 @@
     document.addEventListener('DOMContentLoaded', function(){
 
         bistaratuEgunKopurua();
-        eskalatu("edukinontzia", 260);
+        eskalatu("edukinontzia", 500);
 
     }, false);
 }());
