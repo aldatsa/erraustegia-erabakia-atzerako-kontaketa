@@ -5,6 +5,7 @@ Zure webgunean Usurbilen irailaren 30etik urriaren 2ra erraustegiari buruz eging
 ```html
 <iframe frameborder="0" scrolling="no" width="260" height="260" src="http://aldatsa.eus/erraustegia-erabakia-atzerako-kontaketa/"></iframe>
 ```
+Beste tamaina bateko atzerako kontaketa nahi izanez gero aldatu width eta height-en balioak. Gehienez 500 jarri, hortik gora gaizki ikusten hasiko da. Kontutan izan width eta height-ek balio berdina izan behar dutela, iframe-ak karratu bat izan behar duela alegia.
 
 Galdeketari buruzko informazio gehiago https://erraustegiaerabakia.wordpress.com/ webgunean.
 
