@@ -54,7 +54,9 @@
                 var link = document.createElement('a');
                 link.download = "erraustegia-erabakia-atzerako-kontaketa-" + i + ".png";
                 link.href = dataUrl;
+                document.body.appendChild(link);
                 link.click();
+                document.body.removeChild(link);
             })
             .catch(function (error) {
                 console.error("oops, something went wrong!", error);
