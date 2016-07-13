@@ -13,9 +13,10 @@
         return egun_kopurua;
     }
 
-    function bistaratuEgunKopurua() {
+    function bistaratuEgunKopurua(zenbakia) {
         var elementua = document.getElementsByClassName("egun-kopurua")[0];
-        var textua = document.createTextNode(kalkulatuFaltaDirenEgunak());
+        //var textua = document.createTextNode(kalkulatuFaltaDirenEgunak());
+        var textua = document.createTextNode(zenbakia);
         elementua.innerText = textua.textContent;
     }
 
@@ -41,10 +42,39 @@
 
     }
 
+    function deskargatuHurrengoIrudia(i) {
+
+        bistaratuEgunKopurua(i);
+        eskalatu("edukinontzia", 500);
+
+        var nodoa = document.getElementById("edukinontzia");
+
+        domtoimage.toPng(nodoa)
+            .then(function (dataUrl) {
+                var link = document.createElement('a');
+                link.download = "erraustegia-erabakia-atzerako-kontaketa-" + i + ".png";
+                link.href = dataUrl;
+                link.click();
+            })
+            .catch(function (error) {
+                console.error("oops, something went wrong!", error);
+            });
+
+    }
+
     document.addEventListener('DOMContentLoaded', function(){
 
-        bistaratuEgunKopurua();
-        eskalatu("edukinontzia", 500);
+        var i = 80;
+
+        var interval = setInterval(function() {
+
+            if (i > 0) {
+                deskargatuHurrengoIrudia(i);
+                i--;
+            } else {
+                clearInterval(interval);
+            }
+        }, 1000);
 
     }, false);
 }());
