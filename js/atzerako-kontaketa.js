@@ -3,9 +3,9 @@
 
     function kalkulatuFaltaDirenEgunak() {
 
-        // 2016ko irailak 30. Kontsultaren lehen eguna.
+        // 2016ko urriaren 21. Kontsultaren lehen eguna.
         // Kontuz! Hilabetea 0-11 artean.
-        var helburua = new Date(2016, 8, 30);
+        var helburua = new Date(2016, 9, 21);
         var gaur = new Date();
         var diferentzia = helburua.getTime() - gaur.getTime();
         var egun_kopurua = Math.ceil(diferentzia / (1000 * 3600 * 24));
