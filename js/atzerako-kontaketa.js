@@ -5,7 +5,7 @@
 
         // 2016ko urriaren 21. Kontsultaren lehen eguna.
         // Kontuz! Hilabetea 0-11 artean.
-        var helburua = new Date(2016, 9, 21);
+        var helburua = new Date(2016, 9, 23);
         var gaur = new Date();
         var diferentzia = helburua.getTime() - gaur.getTime();
         var egun_kopurua = Math.ceil(diferentzia / (1000 * 3600 * 24));
