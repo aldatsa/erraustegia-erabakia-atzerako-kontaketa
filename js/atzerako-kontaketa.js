@@ -10,6 +10,13 @@
         var diferentzia = helburua.getTime() - gaur.getTime();
         var egun_kopurua = Math.ceil(diferentzia / (1000 * 3600 * 24));
 
+        // Kontsultaren eguna pasa bada, zero jarri. Bestela zenbaki negatiboak agertzen ziren.
+        if (egun_kopurua < 0) {
+
+            egun_kopurua = 0;
+
+        }
+
         return egun_kopurua;
     }
 
